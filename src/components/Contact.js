@@ -9,7 +9,7 @@ function Contact(props) {
     }
 
     const styles = {
-        main:`w-max bg-purple p-.01 text-white text-lg text-center font-semibold`,
+        main:`w-max h-fit bg-purple p-.01 text-white text-lg text-center font-semibold`,
         method:`flex p-.01`,
         p:`px-10`,
     }
