@@ -39,8 +39,6 @@ function Content(props) {
                 </Link>
             </div>
             <div className={styles.subBar}>
-                {/* { subTabs.map(tab => (
-                ))} */}
                 <Link
                 to="services/webApps"
                 >

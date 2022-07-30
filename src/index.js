@@ -8,6 +8,7 @@ import WebApps from './components/WebApps';
 import Web3 from './components/Web3';
 import Links from './components/Links';
 import About from './components/About';
+import Content from './components/Content';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,8 +17,8 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="services" element={<Links/>}>
-        <Route path="webApps" element={<WebApps/>}/>
-        <Route path="web3" element={<Web3/>}/>
+          <Route path="webApps" element={<WebApps/>}/>
+          <Route path="web3" element={<Web3/>}/>
         </Route>
         <Route path="about" element={<About/>}/>
       </Route>
