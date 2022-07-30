@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { tabs } from '../Nav'
+import NavBar from './NavBar';
 
 function Content(props) {
 
@@ -12,30 +14,7 @@ function Content(props) {
     }
     return (
         <div className={styles.main}>
-            <div className={styles.bar}>
-                <Link
-                to="services"
-                >
-                    Services
-                </Link>
-                <Link
-                to="about"
-                >
-                    About
-                </Link>
-            </div>
-            <div className={styles.subBar}>
-                <Link
-                to="services/webApps"
-                >
-                    Web Apps
-                </Link>
-                <Link
-                to="services/web3"
-                >
-                    Web3
-                </Link>
-            </div>
+            <NavBar tabs={tabs} main />
             <div className={styles.content}>
                 <Outlet/>
             </div>

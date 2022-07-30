@@ -2,7 +2,7 @@ import React from 'react';
 
 function WebApps(props) {
     const styles = {
-        main:`bg-white p-.02 rounded-lg`,
+        main:`bg-white p-.02 rounded-b-lg`,
         h1:`text-2xl font-bold`,
         h2:`text-lg font-semibold`,
         p:``,
