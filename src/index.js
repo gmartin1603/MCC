@@ -9,6 +9,7 @@ import Web3 from './components/Web3';
 import Links from './components/Links';
 import About from './components/About';
 import Content from './components/Content';
+import NotFound from './components/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,9 +20,11 @@ root.render(
         <Route path="services" element={<Links/>}>
           <Route path="webApps" element={<WebApps/>}/>
           <Route path="web3" element={<Web3/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Route>
         <Route path="about" element={<About/>}/>
       </Route>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
