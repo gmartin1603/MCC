@@ -1,21 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import Web3 from './Web3';
-import WebApps from './WebApps';
 
 function Content(props) {
-
-    const tabs = [
-        "Services",
-        "Testimonials",
-        "About",
-    ]
-    const subTabs = [
-        "Progessive Web Apps",
-        "Web3",
-        "Android/ios Apps",
-        "PLC Automation",
-    ]
 
     const styles = {
         main:`m-.01 w-full max-w-[1200px] overflow-scroll rounded border-4 border-white shadow-md shadow-white bg-clickedBlue`,

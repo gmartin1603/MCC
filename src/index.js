@@ -8,7 +8,6 @@ import WebApps from './components/WebApps';
 import Web3 from './components/Web3';
 import Links from './components/Links';
 import About from './components/About';
-import Content from './components/Content';
 import NotFound from './components/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
