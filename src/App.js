@@ -9,7 +9,7 @@ function App() {
   let navigate = useNavigate()
   
   useEffect(() => {
-    navigate('/services')
+    navigate('services')
   },[])
 
   const styles = {
