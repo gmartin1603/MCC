@@ -27,7 +27,7 @@ const Nav = {
     ],
     subTabs:[
         {
-            label:"Progessive Web Apps", 
+            label:"Web, Desktop, and Server Apps", 
             route:"webApps",
             img: SEO,
             bio:`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Auatis consequuntur dolorem, quasi cumque ipsam neque distinctio labore, expedita autem error magni, alias sapiente repudiandae. Rem, totam.`,

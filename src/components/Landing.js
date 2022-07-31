@@ -4,7 +4,7 @@ import { tabs } from '../Nav'
 
 function Landing(props) {
     const styles = {
-        main:`flex flex-wrap justify-between`,
+        main:`max-h-[75vh] flex flex-wrap justify-around overflow-auto`,
     }
     return (
         <div className={styles.main}>

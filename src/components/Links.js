@@ -36,7 +36,7 @@ function Links(props) {
     },[url])
 
     const styles = {
-        main:`flex justify-around flex-wrap cursor-pointer`,
+        main:`max-h-[75vh] flex justify-around flex-wrap cursor-pointer`,
     }
     return (
         <div className={styles.main}>

@@ -9,16 +9,15 @@ function Contact(props) {
     }
 
     const styles = {
-        main:`w-max h-fit bg-purple p-.01 text-white text-lg text-center font-semibold`,
+        main:`flex flex-wrap w-max h-fit bg-purple p-.01 text-white text-lg text-center font-semibold`,
         method:`flex p-.01`,
         p:`px-10`,
     }
     return (
         <div className={styles.main}>
-            <h1 className={styles.h1}>Contact</h1>
             <div className={styles.method}>
             <MailOutline/>
-            <p className={styles.p}>{profile.email}</p>
+            <a href="mailto: countryCoder20@gmail.com" className={styles.p}>{profile.email}</a>
             </div>
             <div className={styles.method}>
             <LinkedIn/>
