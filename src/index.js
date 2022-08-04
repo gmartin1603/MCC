@@ -27,9 +27,13 @@ root.render(
           <Route path="webApps" element={<WebApps/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Route>
+        <Route path="tutoring" element={<Links/>}>
+          <Route path="webApps" element={<WebApps/>}/>
+          <Route path="*" element={<NotFound/>}/>
+        </Route>
         <Route path="about" element={<About/>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Route>
-      <Route path="*" element={<NotFound/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

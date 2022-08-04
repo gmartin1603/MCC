@@ -4,30 +4,38 @@ const lightBulb = require('./assets/lightBulb.png')
 const SEO = require('./assets/SEO.png')
 const NFT = require('./assets/NFT.png')
 const phone = require('./assets/phone.png')
+const tutor = require('./assets/tutor.png')
+
 const Nav = {
     tabs: [
         {
             "label":"Services", 
             "route":"services",
             "img": services,
-            "bio":`More about the how we provide custom solutions for modern problems. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Auatis consequuntur dolorem, quasi cumque ipsam neque distinctio labore, expedita autem error magni, alias sapiente repudiandae. Rem, totam.`,
+            "bio":`More about the how we provide custom solutions for modern problems.`,
+        },
+        {
+            "label":"Tutoring", 
+            "route":"tutoring",
+            "img": tutor,
+            "bio":`Learn more about our tutoring resourses.`,
         },
         {
             "label":"Testimonials", 
             "route":"reviews",
             "img": fiveStars,
-            "bio":`See what past and current clinets have to say! Lorem ipsum dolor, sit amet consectetur consequuntur dolorem, quasi cumque ipsam neque distinctio labore, expedita autem error magni, alias sapiente repudiandae. Rem, totam.`,
+            "bio":`See what past and current clinets have to say! `,
         },
         {
             "label":"About", 
             "route":"about",
             "img": lightBulb,
-            "bio":`All about Martin Solutions LLC. Lorem ipsum dolor, sit amet perspiciatis consequuntur dolorem, quasi cumque ipsam neque distinctio labore, expedita autem error magni, alias sapiente repudiandae. Rem, totam.`,
+            "bio":`All about Martin Solutions LLC. and what we do.`,
         }
     ],
     subTabs:[
         {
-            label:"Web, Desktop, and Server Apps", 
+            label:"Custom Applications", 
             route:"webApps",
             img: SEO,
             bio:`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Auatis consequuntur dolorem, quasi cumque ipsam neque distinctio labore, expedita autem error magni, alias sapiente repudiandae. Rem, totam.`,

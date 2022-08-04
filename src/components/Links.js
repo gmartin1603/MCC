@@ -27,16 +27,16 @@ function Links(props) {
                 }
             }
         }
+        console.log(slash)
         if (slash < 4) {
             setActiveRoute(false)
         } else {
             setActiveRoute(true)
         }
-        console.log(route)
     },[url])
 
     const styles = {
-        main:`max-h-[75vh] flex justify-around flex-wrap cursor-pointer`,
+        main:`max-h-[75vh] w-full overflow-auto flex justify-around flex-wrap cursor-pointer`,
     }
     return (
         <div className={styles.main}>

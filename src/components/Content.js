@@ -13,9 +13,6 @@ function Content(props) {
 
     const styles = {
         main:`m-.01 w-full max-w-[1200px] overflow-auto rounded border-4 border-white shadow-md shadow-white bg-clickedBlue`,
-        bar:`bg-white p-.01 sticky top-0 font-semibold text-xl flex justify-around`,
-        subBar:`bg-clearBlack text-white p-.01 sticky top-[40px] font-semibold text-xl flex justify-around`,
-        tab:``,
         content:`p-.02`,
     }
     return (
