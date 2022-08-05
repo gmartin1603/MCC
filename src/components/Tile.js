@@ -16,7 +16,7 @@ function Tile({link, handleClick}) {
             className={styles.link} 
             key={link.route}
             value={link.route}
-            onClick={() => handleClick(link.route)}
+            // onClick={() => handleClick(link.route)}
             >
                 <img className={styles.img} src={link.img} alt="icon" />
                 <h1 className={styles.h1}> {link.label} </h1>

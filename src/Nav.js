@@ -9,16 +9,16 @@ const tutor = require('./assets/tutor.png')
 const Nav = {
     tabs: [
         {
-            "label":"Services", 
+            "label":"Software Solutions", 
             "route":"services",
             "img": services,
-            "bio":`More about the how we provide custom solutions for modern problems.`,
+            "bio":`More about the custom solutions we provide for our client's modern problems.`,
         },
         {
             "label":"Tutoring", 
             "route":"tutoring",
             "img": tutor,
-            "bio":`Learn more about our tutoring resourses.`,
+            "bio":`Resouces for aspiring software engineers.`,
         },
         {
             "label":"Testimonials", 
@@ -35,10 +35,10 @@ const Nav = {
     ],
     subTabs:[
         {
-            label:"Custom Applications", 
+            label:"Custom Web Applications", 
             route:"webApps",
             img: SEO,
-            bio:`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Auatis consequuntur dolorem, quasi cumque ipsam neque distinctio labore, expedita autem error magni, alias sapiente repudiandae. Rem, totam.`,
+            bio:`Design, Development, Deployment, and Mantinace`,
         },
         {
             label:"Web3", 

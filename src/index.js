@@ -9,32 +9,35 @@ import Web3 from './components/Web3';
 import Links from './components/Links';
 import About from './components/About';
 import NotFound from './components/NotFound';
-import Landing from './components/Landing';
+import { AppProvider } from './context/AppState';
+import Tiles from './components/Tiles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<Landing/>}/>
-        <Route path="services" element={<Links/>}>
-          <Route path="webApps" element={<WebApps/>}/>
-          <Route path="web3" element={<Web3/>}/>
-          <Route path="*" element={<NotFound/>}/>
-        </Route>
-        <Route path="reviews" element={<Links/>}>
-          <Route path="webApps" element={<WebApps/>}/>
-          <Route path="*" element={<NotFound/>}/>
-        </Route>
-        <Route path="tutoring" element={<Links/>}>
-          <Route path="webApps" element={<WebApps/>}/>
-          <Route path="*" element={<NotFound/>}/>
-        </Route>
-        <Route path="about" element={<About/>}/>
-        <Route path="*" element={<NotFound/>}/>
-      </Route>
-    </Routes>
+      <AppProvider >
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route index element={<Tiles/>}/>
+            <Route path="services" element={<Tiles/>}>
+              <Route path="webApps" element={<WebApps/>}/>
+              <Route path="web3" element={<Web3/>}/>
+              <Route path="*" element={<NotFound/>}/>
+            </Route>
+            <Route path="reviews" element={<Links/>}>
+              <Route path="webApps" element={<WebApps/>}/>
+              <Route path="*" element={<NotFound/>}/>
+            </Route>
+            <Route path="tutoring" element={<Links/>}>
+              <Route path="webApps" element={<WebApps/>}/>
+              <Route path="*" element={<NotFound/>}/>
+            </Route>
+            <Route path="about" element={<About/>}/>
+            <Route path="*" element={<NotFound/>}/>
+          </Route>
+        </Routes>
+      </AppProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,48 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom'
+import { useAppState } from '../context/AppState';
 import {subTabs} from '../Nav'
 import NavBar from './NavBar';
 import Tile from './Tile';
 
 function Links(props) {
 
-    const [activeRoute, setActiveRoute] = useState(undefined)
-
-    const url = window.location.href
-
-    const handleClick = (route) => {
-        setActiveRoute(route)
-    }
+    const {route, links, routeList} = useAppState()
 
     useEffect(() => {
-        console.log(url)
-        let slash = 0
-        let route = ''
-        for (const char in url) {
-            if (url.charAt(char) === "/") {
-                slash = slash + 1
-                if (slash === 4) {
-                    // console.log(url.slice(char))
-                    route = url.slice(char)
-                }
-            }
-        }
-        console.log(slash)
-        if (slash < 4) {
-            setActiveRoute(false)
-        } else {
-            setActiveRoute(true)
-        }
-    },[url])
+        console.log(route)
+    },[route])
 
     const styles = {
         main:`max-h-[75vh] w-full overflow-auto flex justify-around flex-wrap cursor-pointer`,
     }
     return (
         <div className={styles.main}>
-            {!activeRoute?
+            {routeList.includes(route)?
                 subTabs.map(link => (
-                    <Tile link={link} handleClick={handleClick} />
+                    <Tile link={link} key={link.route} />
                 ))
                 :
                 <>
