@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import WebApps from './components/WebApps';
-import Web3 from './components/Web3';
+import WebApps from './pages/WebApps';
+import Web3 from './pages/Web3';
 import Links from './components/Links';
-import About from './components/About';
+import About from './pages/About';
 import NotFound from './components/NotFound';
 import { AppProvider } from './context/AppState';
 import Tiles from './components/Tiles';
+import Projects from './pages/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +21,7 @@ root.render(
         <Routes>
           <Route path="/" element={<App />}>
             <Route index element={<Tiles/>}/>
-            <Route path="services" element={<Tiles/>}>
+            <Route path="skills" element={<Tiles/>}>
               <Route path="webApps" element={<WebApps/>}/>
               <Route path="web3" element={<Web3/>}/>
               <Route path="*" element={<NotFound/>}/>
@@ -29,8 +30,8 @@ root.render(
               <Route path="webApps" element={<WebApps/>}/>
               <Route path="*" element={<NotFound/>}/>
             </Route>
-            <Route path="tutoring" element={<Links/>}>
-              <Route path="webApps" element={<WebApps/>}/>
+            <Route path="spotLight" element={<Projects/>}>
+              {/* <Route path="projects" element={<Projects/>}/> */}
               <Route path="*" element={<NotFound/>}/>
             </Route>
             <Route path="about" element={<About/>}/>

@@ -7,7 +7,7 @@ function App() {
 
   const styles = {
     main:`flex flex-col w-screen h-screen bg-clearBlack overflow-hidden`,
-    body:`max-h-[80vh] flex flex-wrap grow`,
+    body:`max-h-[80vh] flex grow`,
   }
   return (
     <div className={styles.main}>

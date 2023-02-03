@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Header(props) {
     const styles = {
-        main:`w-screen flex justify-around items-center h-min bg-blue`,
+        main:`w-screen flex justify-around items-center h-[12%] bg-blue`,
         logoCont:`bg-clearBlack w-[10%]`,
         logo:`object-cover`,
     }
@@ -15,7 +15,10 @@ function Header(props) {
                     <img className={styles.logo} src={logo} alt="logo" />
                 </Link>
             </div>
-            <h1 className={`text-4xl font-bold`}>Martin Solutions LLC</h1>
+            <>
+            <h1 className={`text-4xl font-bold`}>George Martin</h1>
+            <p>Cedar Rapids, IA</p>
+            </>
         </div>
     );
 }
